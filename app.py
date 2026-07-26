@@ -73,7 +73,7 @@ if st.button("Predict Race Outcome", type="primary", use_container_width=True):
         """
         <div style="text-align: center; margin-top: 50px; padding: 10px; font-size: 14px; color: gray;">
             <hr>
-            Built by Your Name 🏎️
+            Built by Roshan Akthar :)
         </div>
         """,
         unsafe_allow_html=True
