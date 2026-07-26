@@ -78,3 +78,12 @@ if st.button("Predict Race Outcome", type="primary", use_container_width=True):
         """,
         unsafe_allow_html=True
     )
+    hide_menu_style = """
+        <style>
+        /* Hides the GitHub/Fork/Hamburger menu */
+        [data-testid="stToolbar"] {visibility: hidden !important;}
+        /* Hides the top header bar completely */
+        header {visibility: hidden !important;}
+        </style>
+    """
+    st.markdown(hide_menu_style, unsafe_allow_html=True)
