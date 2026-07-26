@@ -68,3 +68,13 @@ if st.button("Predict Race Outcome", type="primary", use_container_width=True):
     for bracket_name, prob in zip(brackets, predictions):
         st.write(f"**{bracket_name}** - {prob * 100:.1f}%")
         st.progress(float(prob))
+
+    st.markdown(
+        """
+        <div style="text-align: center; margin-top: 50px; padding: 10px; font-size: 14px; color: gray;">
+            <hr>
+            Built by Your Name 🏎️
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
