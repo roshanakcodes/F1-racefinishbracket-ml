@@ -1,7 +1,6 @@
 streamlit
-fastf1
 pandas
 numpy
 scikit-learn
-tensorflow-cpu
+tensorflow
 joblib
