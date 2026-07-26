@@ -1,0 +1,14 @@
+# FastF1 Cache (CRITICAL to ignore)
+f1_cache/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# OS generated files
+.DS_Store
