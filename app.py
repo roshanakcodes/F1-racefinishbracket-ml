@@ -6,7 +6,7 @@ import joblib
 
 st.set_page_config(page_title="F1 Finish Predictor", page_icon="🏎️", layout="centered")
 
-st.title("F1 Finish Predictor 🏎️")
+st.title("F1 Finish Predictor")
 st.write("Predict a driver's finish, based on qualifying data and team pace.")
 
 @st.cache_resource
@@ -17,7 +17,7 @@ def load_artifacts():
 
 try:
     model, scaler = load_artifacts()
-    st.success("Model and Scaler loaded successfully!")
+    st.success("Loaded successfully!")
 except Exception as e:
     st.error(f"Error loading files. Make sure 'f1_predictor_model.keras' and 'scaler.pkl' exist in this folder.\nDetails: {e}")
     st.stop()
@@ -55,8 +55,8 @@ if st.button("Predict Race Outcome", type="primary", use_container_width=True):
     predictions = model.predict(scaled_input)[0]
     
     brackets = [
-        "P1 - P3 : Let's goooo! Podium mate, PODIUM", 
-        "P4 - P10 - We got some points today guys !!!", 
+        "P1 - P3 : Let's goooo! Podium mate, PODIUM | Grazie ragazzi", 
+        "P4 - P10 - We got some points today guys !!! | Smoooooth operatorrr", 
         "P11 - P20 - Mid weekend"
     ]
     predicted_index = int(np.argmax(predictions))
